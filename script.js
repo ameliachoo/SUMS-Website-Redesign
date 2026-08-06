@@ -22,3 +22,52 @@ themeBtn.addEventListener("click", () => {
   themeIcon.classList.toggle("fa-sun");
   themeIcon.classList.toggle("fa-moon");
 });
+
+const slidesContainer = document.getElementById("carousel-slides");
+const dots = document.querySelectorAll("#carousel-dots .dot");
+const totalSlides = dots.length;
+let currentSlide = 0;
+let autoAdvance;
+
+function goToSlide(index) {
+  currentSlide = index;
+  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
+
+function nextSlide() {
+  const next = (currentSlide + 1) % totalSlides;
+  goToSlide(next);
+}
+
+function startAutoAdvance() {
+  autoAdvance = setInterval(nextSlide, 5000);
+}
+
+function stopAutoAdvance() {
+  clearInterval(autoAdvance);
+}
+
+// Click a dot to jump to that slide
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    const index = parseInt(dot.dataset.index, 10);
+    goToSlide(index);
+    stopAutoAdvance();
+    startAutoAdvance(); // restart timer after manual click
+  });
+});
+
+startAutoAdvance();
+
+// Accordion toggle
+const accordionRows = document.querySelectorAll(".accordion-row");
+
+accordionRows.forEach((row) => {
+  row.addEventListener("click", () => {
+    const item = row.parentElement;
+    item.classList.toggle("open");
+  });
+});

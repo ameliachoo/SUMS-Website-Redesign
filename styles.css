@@ -239,6 +239,11 @@ body {
   background: #fdf7f6;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
 .feature-icon {
@@ -323,6 +328,11 @@ body {
   border-radius: 12px;
   background: #fdf7f6;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.banner-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
 .banner-icon {
@@ -472,6 +482,22 @@ body {
   margin: 0 auto 1.5rem;
 }
 
+.carousel-viewport {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 .carousel-review-label {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -486,8 +512,6 @@ body {
   font-size: 0.9rem;
   line-height: 1.6;
   color: #213645;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
 }
 
 .carousel-dots {
@@ -502,7 +526,8 @@ body {
   height: 10px;
   border-radius: 999px;
   background: #c4c4c4;
-  transition: width 0.2s ease;
+  transition: width 0.2s ease, background 0.2s ease;
+  cursor: pointer;
 }
 
 .dot.active {
@@ -556,7 +581,6 @@ body {
   padding: 1.1rem 1.5rem;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #d9d9d9;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.85rem;
@@ -606,12 +630,37 @@ body {
   font-size: 0.9rem;
 }
 
+.accordion-item {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 2000px;
+}
+
+.accordion-chevron i {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.open .accordion-chevron i {
+  transform: rotate(90deg);
+}
+
 .capability-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1.5rem;
-  border-bottom: 1px solid #d9d9d9;
   text-align: left;
 }
 
@@ -947,6 +996,11 @@ body {
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-submit:hover {
+  background: #009d7d;
 }
 
 /* Responsive */

@@ -175,25 +175,60 @@
       </div>
     </section>
 
-    <section class="carousel-section">
+        <section class="carousel-section">
       <div class="carousel-track">
         <div class="carousel-pill"></div>
 
-        <div class="carousel-review-label">Review 1</div>
+        <div class="carousel-viewport">
+          <div class="carousel-slides" id="carousel-slides">
+            <div class="carousel-slide">
+              <div class="carousel-review-label">Review 1</div>
+              <blockquote class="carousel-quote">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+              </blockquote>
+            </div>
 
-        <blockquote class="carousel-quote">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-          In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar viverra fringilla lacus
-          nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent
-          taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-        </blockquote>
+            <div class="carousel-slide">
+              <div class="carousel-review-label">Review 2</div>
+              <blockquote class="carousel-quote">
+                Pulvinar viverra fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.
+                Ut hendrerit semper vel class aptent taciti sociosqu.
+              </blockquote>
+            </div>
 
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+            <div class="carousel-slide">
+              <div class="carousel-review-label">Review 3</div>
+              <blockquote class="carousel-quote">
+                Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Quisque faucibus ex sapien vitae pellentesque.
+              </blockquote>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-review-label">Review 4</div>
+              <blockquote class="carousel-quote">
+                In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                Iaculis massa nisl malesuada lacinia integer nunc posuere.
+              </blockquote>
+            </div>
+
+            <div class="carousel-slide">
+              <div class="carousel-review-label">Review 5</div>
+              <blockquote class="carousel-quote">
+                Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                Pulvinar viverra fringilla lacus nec metus.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-dots" id="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
         </div>
       </div>
     </section>
@@ -212,69 +247,151 @@
         </p>
 
                 <div class="accordion-block">
-          <button class="accordion-row">
-            <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
-            <span class="accordion-label">GET TO KNOW YOUR MEMBERS...</span>
-            <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
-
-          <button class="accordion-row">
-            <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
-            <span class="accordion-label">TALK TO YOUR MEMBERS...</span>
-            <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
-
-          <div class="capability-grid">
-            <article class="capability-card">
-              <div class="capability-icon"><i class="fa-solid fa-desktop"></i></div>
-              <h3 class="capability-title">WEBSITE</h3>
-              <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-            </article>
-
-            <article class="capability-card">
-              <div class="capability-icon"><i class="fa-solid fa-tv"></i></div>
-              <h3 class="capability-title">DIGITAL SIGNAGE</h3>
-              <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-            </article>
-
-            <article class="capability-card">
-              <div class="capability-icon"><i class="fa-solid fa-comment"></i></div>
-              <h3 class="capability-title">SURVEYS</h3>
-              <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-            </article>
-
-            <article class="capability-card">
-              <div class="capability-icon"><i class="fa-solid fa-users"></i></div>
-              <h3 class="capability-title">SUBSCRIPTION GROUPS</h3>
-              <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-            </article>
-
-            <article class="capability-card">
-              <div class="capability-icon"><i class="fa-solid fa-envelope"></i></div>
-              <h3 class="capability-title">SEND & TRACK MAIL</h3>
-              <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-            </article>
+          <div class="accordion-item">
+            <button class="accordion-row">
+              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-label">GET TO KNOW YOUR MEMBERS...</span>
+              <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+            <div class="accordion-content">
+              <div class="capability-grid">
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-user"></i></div>
+                  <h3 class="capability-title">MEMBERSHIP</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                  <h3 class="capability-title">ANALYTICS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-address-card"></i></div>
+                  <h3 class="capability-title">PROFILES</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+              </div>
+            </div>
           </div>
 
-          <button class="accordion-row">
-            <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
-            <span class="accordion-label">USE DIGITAL TOOLS TO REPRESENT AND ADVISE YOUR MEMBERS...</span>
-            <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
+          <div class="accordion-item">
+            <button class="accordion-row">
+              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-label">TALK TO YOUR MEMBERS...</span>
+              <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+            <div class="accordion-content">
+              <div class="capability-grid">
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-desktop"></i></div>
+                  <h3 class="capability-title">WEBSITE</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-tv"></i></div>
+                  <h3 class="capability-title">DIGITAL SIGNAGE</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-comment"></i></div>
+                  <h3 class="capability-title">SURVEYS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-users"></i></div>
+                  <h3 class="capability-title">SUBSCRIPTION GROUPS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <h3 class="capability-title">SEND & TRACK MAIL</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+              </div>
+            </div>
+          </div>
 
-          <button class="accordion-row">
-            <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
-            <span class="accordion-label">GET YOUR MEMBERS INVOLVED...</span>
-            <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
+          <div class="accordion-item">
+            <button class="accordion-row">
+              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-label">USE DIGITAL TOOLS TO REPRESENT AND ADVISE YOUR MEMBERS...</span>
+              <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+            <div class="accordion-content">
+              <div class="capability-grid">
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                  <h3 class="capability-title">ADVICE</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-hand"></i></div>
+                  <h3 class="capability-title">FEEDBACK</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+                  <h3 class="capability-title">ELECTIONS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+              </div>
+            </div>
+          </div>
 
-          <button class="accordion-row">
-            <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
-            <span class="accordion-label">RUN YOUR UNION...</span>
-            <span class="accordion-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
+          <div class="accordion-item">
+            <button class="accordion-row">
+              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-label">GET YOUR MEMBERS INVOLVED...</span>
+              <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+            <div class="accordion-content">
+              <div class="capability-grid">
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-calendar"></i></div>
+                  <h3 class="capability-title">EVENTS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-futbol"></i></div>
+                  <h3 class="capability-title">SPORTS & SOCIETIES</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-people-group"></i></div>
+                  <h3 class="capability-title">VOLUNTEERING</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-row">
+              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-label">RUN YOUR UNION...</span>
+              <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+            </button>
+            <div class="accordion-content">
+              <div class="capability-grid">
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-gear"></i></div>
+                  <h3 class="capability-title">ADMIN</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-sterling-sign"></i></div>
+                  <h3 class="capability-title">FINANCE</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-file-lines"></i></div>
+                  <h3 class="capability-title">REPORTING</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
 
       <section class="stats-section">
