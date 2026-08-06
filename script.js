@@ -14,11 +14,12 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// Theme icon toggle (sun <-> moon)
+// Theme toggle (light <-> dark)
 const themeBtn = document.getElementById("theme-btn");
 const themeIcon = document.getElementById("theme-icon");
 
 themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
   themeIcon.classList.toggle("fa-sun");
   themeIcon.classList.toggle("fa-moon");
 });
@@ -64,6 +65,7 @@ startAutoAdvance();
 
 // Accordion toggle
 const accordionRows = document.querySelectorAll(".accordion-row");
+const accordionItems = document.querySelectorAll(".accordion-item");
 
 accordionRows.forEach((row) => {
   row.addEventListener("click", () => {

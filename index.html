@@ -13,8 +13,9 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">
-      <img src="sumslogo.svg" alt="Logo" class="logo-img">
+        <div class="logo">
+      <img src="sumslogo.svg" alt="Logo" class="logo-img logo-light">
+      <img src="sumslogo-dark.svg" alt="Logo" class="logo-img logo-dark">
     </div>
 
     <nav class="main-nav">
@@ -113,7 +114,7 @@
 
     <section class="banner-section">
       <svg class="banner-wave" viewBox="0 0 1440 174" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18.0498L48 27.7967C96 37.5436 192 57.0373 288 66.7842C384 76.5311 480 76.5311 576 63.5353C672 50.5394 768 24.5477 864 11.5519C960 -1.44398 1056 -1.44398 1152 1.80498C1248 5.05394 1344 11.5519 1392 14.8008L1440 18.0498V174H1392C1344 174 1248 174 1152 174C1056 174 960 174 864 174C768 174 672 174 576 174C480 174 384 174 288 174C192 174 96 174 48 174H0V18.0498Z" fill="#D9D9D9"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18.0498L48 27.7967C96 37.5436 192 57.0373 288 66.7842C384 76.5311 480 76.5311 576 63.5353C672 50.5394 768 24.5477 864 11.5519C960 -1.44398 1056 -1.44398 1152 1.80498C1248 5.05394 1344 11.5519 1392 14.8008L1440 18.0498V174H1392C1344 174 1248 174 1152 174C1056 174 960 174 864 174C768 174 672 174 576 174C480 174 384 174 288 174C192 174 96 174 48 174H0V18.0498Z" fill="currentColor"/>
       </svg>
 
       <div class="banner-section-body">
@@ -235,7 +236,7 @@
 
     <section class="capabilities">
       <svg class="capabilities-wave" viewBox="0 0 1440 174" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 18.0498L1392 27.7967C1344 37.5436 1248 57.0373 1152 66.7842C1056 76.5311 960 76.5311 864 63.5353C768 50.5394 672 24.5477 576 11.5519C480 -1.44398 384 -1.44398 288 1.80498C192 5.05394 95.9999 11.5519 47.9999 14.8008L-5.72205e-05 18.0498V174H47.9999C95.9999 174 192 174 288 174C384 174 480 174 576 174C672 174 768 174 864 174C960 174 1056 174 1152 174C1248 174 1344 174 1392 174H1440V18.0498Z" fill="#D9D9D9"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 18.0498L1392 27.7967C1344 37.5436 1248 57.0373 1152 66.7842C1056 76.5311 960 76.5311 864 63.5353C768 50.5394 672 24.5477 576 11.5519C480 -1.44398 384 -1.44398 288 1.80498C192 5.05394 95.9999 11.5519 47.9999 14.8008L-5.72205e-05 18.0498V174H47.9999C95.9999 174 192 174 288 174C384 174 480 174 576 174C672 174 768 174 864 174C960 174 1056 174 1152 174C1248 174 1344 174 1392 174H1440V18.0498Z" fill="currentColor"/>
       </svg>
 
       <div class="capabilities-body">
@@ -246,28 +247,33 @@
           intelligently linked to allow your organisation to be as effective as possible.
         </p>
 
-                <div class="accordion-block">
-          <div class="accordion-item">
+        <div class="accordion-block">
+                    <div class="accordion-item open">
             <button class="accordion-row">
-              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-icon"><i class="fa-solid fa-user-plus"></i></span>
               <span class="accordion-label">GET TO KNOW YOUR MEMBERS...</span>
               <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </button>
             <div class="accordion-content">
               <div class="capability-grid">
                 <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-users"></i></div>
+                  <h3 class="capability-title">MEMBERS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
                   <div class="capability-icon"><i class="fa-solid fa-user"></i></div>
-                  <h3 class="capability-title">MEMBERSHIP</h3>
+                  <h3 class="capability-title">ASSOCIATE MEMBERS</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-chart-bar"></i></div>
-                  <h3 class="capability-title">ANALYTICS</h3>
+                  <div class="capability-icon"><i class="fa-solid fa-folder"></i></div>
+                  <h3 class="capability-title">REPORTS</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-address-card"></i></div>
-                  <h3 class="capability-title">PROFILES</h3>
+                  <div class="capability-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                  <h3 class="capability-title">TIMELINE</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
               </div>
@@ -276,7 +282,7 @@
 
           <div class="accordion-item">
             <button class="accordion-row">
-              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-icon"><i class="fa-solid fa-comments"></i></span>
               <span class="accordion-label">TALK TO YOUR MEMBERS...</span>
               <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </button>
@@ -313,20 +319,20 @@
 
           <div class="accordion-item">
             <button class="accordion-row">
-              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-icon"><i class="fa-solid fa-scale-balanced"></i></span>
               <span class="accordion-label">USE DIGITAL TOOLS TO REPRESENT AND ADVISE YOUR MEMBERS...</span>
               <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </button>
             <div class="accordion-content">
               <div class="capability-grid">
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                  <div class="capability-icon"><i class="fa-solid fa-circle-info"></i></div>
                   <h3 class="capability-title">ADVICE</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-hand"></i></div>
-                  <h3 class="capability-title">FEEDBACK</h3>
+                  <div class="capability-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                  <h3 class="capability-title">SUGGESTIONS</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
@@ -334,31 +340,56 @@
                   <h3 class="capability-title">ELECTIONS</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-user-shield"></i></div>
+                  <h3 class="capability-title">REPS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <h3 class="capability-title">ACADEMIC OPPORTUNITIES</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-clipboard"></i></div>
+                  <h3 class="capability-title">PETITIONS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-building-columns"></i></div>
+                  <h3 class="capability-title">COURSEMATE</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <button class="accordion-row">
-              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
               <span class="accordion-label">GET YOUR MEMBERS INVOLVED...</span>
               <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </button>
             <div class="accordion-content">
               <div class="capability-grid">
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-calendar"></i></div>
-                  <h3 class="capability-title">EVENTS</h3>
+                  <div class="capability-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                  <h3 class="capability-title">VOLUNTEERING</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-list-check"></i></div>
+                  <h3 class="capability-title">SKILLS LOG</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-table-columns"></i></div>
+                  <h3 class="capability-title">STUDENT DASHBOARD</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
                   <div class="capability-icon"><i class="fa-solid fa-futbol"></i></div>
-                  <h3 class="capability-title">SPORTS & SOCIETIES</h3>
-                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-                </article>
-                <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-people-group"></i></div>
-                  <h3 class="capability-title">VOLUNTEERING</h3>
+                  <h3 class="capability-title">ACTIVITY MANAGEMENT</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
               </div>
@@ -367,25 +398,40 @@
 
           <div class="accordion-item">
             <button class="accordion-row">
-              <span class="accordion-icon"><i class="fa-solid fa-user"></i></span>
+              <span class="accordion-icon"><i class="fa-solid fa-gears"></i></span>
               <span class="accordion-label">RUN YOUR UNION...</span>
               <span class="accordion-chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </button>
             <div class="accordion-content">
               <div class="capability-grid">
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-gear"></i></div>
-                  <h3 class="capability-title">ADMIN</h3>
-                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
-                </article>
-                <article class="capability-card">
                   <div class="capability-icon"><i class="fa-solid fa-sterling-sign"></i></div>
-                  <h3 class="capability-title">FINANCE</h3>
+                  <h3 class="capability-title">EPOS</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
                 <article class="capability-card">
-                  <div class="capability-icon"><i class="fa-solid fa-file-lines"></i></div>
-                  <h3 class="capability-title">REPORTING</h3>
+                  <div class="capability-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                  <h3 class="capability-title">ROOM BOOKINGS</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-person"></i></div>
+                  <h3 class="capability-title">HUMAN RESOURCES</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-list-check"></i></div>
+                  <h3 class="capability-title">INCIDENT MANAGEMENT</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-calendar"></i></div>
+                  <h3 class="capability-title">EVENTS MANAGEMENT</h3>
+                  <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
+                </article>
+                <article class="capability-card">
+                  <div class="capability-icon"><i class="fa-solid fa-credit-card"></i></div>
+                  <h3 class="capability-title">FINANCE</h3>
                   <p class="capability-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium.</p>
                 </article>
               </div>
