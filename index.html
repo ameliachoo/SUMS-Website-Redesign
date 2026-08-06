@@ -26,13 +26,24 @@
     </nav>
 
     <div class="header-icons">
-      <i class="fa-solid fa-comments"></i>
-      <i class="fa-solid fa-sun"></i>
+      <div class="icon-wrapper" id="chat-wrapper">
+        <button class="icon-btn" id="chat-btn" aria-label="Social links">
+          <i class="fa-solid fa-comments"></i>
+        </button>
+        <div class="chat-dropdown" id="chat-dropdown">
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <button class="icon-btn" id="theme-btn" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" id="theme-icon"></i>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="about">
       <h1 class="hero-heading">
         <span class="hero-heading-light">BY STUDENT'S UNIONS</span>
         <span class="hero-heading-bold">FOR STUDENT'S UNIONS</span>
@@ -54,7 +65,7 @@
       <button class="view-more-btn">View more <i class="fa-solid fa-arrow-right"></i></button>
     </section>
 
-        <section class="intro">
+    <section class="intro" id="features">
       <h2 class="section-heading">INTRODUCTION TO <strong>SUMS</strong></h2>
       <p class="section-subtext">
         The Students' Union Management System (SUMS) uses innovative technology to understand,
@@ -299,11 +310,11 @@
           </div>
         </div>
 
-        <button class="view-more-btn stats-btn">View more →</button>
+         <button class="view-more-btn stats-btn">View more <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </section>
 
-    <section class="partners-section">
+    <section class="partners-section" id="partners">
       <h2 class="section-heading">WHO WE WORK WITH</h2>
 
       <div class="partners-grid">
@@ -326,7 +337,7 @@
       </div>
     </section>
 
-       <section class="team-section">
+    <section class="team-section" id="team">
       <div class="team-inner">
         <h2 class="section-heading">WHO WE ARE</h2>
         <p class="section-subtext">
@@ -425,7 +436,7 @@
       </div>
     </section>
 
-     <section class="contact-section">
+    <section class="contact-section" id="join">
       <div class="contact-inner">
         <div class="contact-text">
           <h2 class="contact-heading">INTERESTED IN <strong>SUMS?</strong></h2>

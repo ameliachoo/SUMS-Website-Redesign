@@ -1,7 +1,16 @@
-* {
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -16,7 +25,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #213645;
+  border-bottom: 1px solid rgba(33, 54, 69, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fdf7f6;
+
 }
 
 .logo-img {
@@ -41,11 +55,61 @@ body {
 .header-icons {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .header-icons i {
   font-size: 2rem;
   color: #11b997;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.chat-dropdown {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fdf7f6;
+  border: 1px solid rgba(33, 54, 69, 0.2);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 0.75rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 101;
+}
+
+.chat-dropdown.open {
+  display: flex;
+}
+
+.chat-dropdown a {
+  color: #11b997;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-dropdown a:hover {
+  color: #0e9e81;
 }
 
 .icon-square {
@@ -122,6 +186,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.view-more-btn:hover {
+  background: #009d7d;
 }
 
 .view-more-btn i {
@@ -604,15 +672,15 @@ body {
 /* Key statistics section */
 .stats-section {
   padding: 4rem 2rem;
-  background: #e8e8e8;
+  background: #fdf7f6;
 }
 
 .stats-inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  background: #000;
-  color: #fff;
+  background: #213645;
+  color: #fdf7f6;
   border-radius: 16px;
   text-align: center;
 }
@@ -622,6 +690,7 @@ body {
   font-weight: 700;
   font-size: 1.75rem;
   margin-bottom: 0.75rem;
+  color: #fdf7f6;
 }
 
 .stats-subtext {
@@ -630,7 +699,7 @@ body {
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.5;
-  color: #ccc;
+  color: #fdf7f6;
 }
 
 .stats-grid {
@@ -649,6 +718,7 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #11b997;
 }
 
 .stat-label {
@@ -657,18 +727,19 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
+  color: #fdf7f6;
 }
 
 .stat-desc {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.75rem;
   line-height: 1.4;
-  color: #ccc;
+  color: #fdf7f6;
 }
 
 .stats-btn {
-  background: #fff;
-  color: #000;
+  background: #11b997;
+  color: #1A232C;
 }
 
 /* Responsive */
@@ -687,12 +758,14 @@ body {
 /* Partners section */
 .partners-section {
   padding: 4rem 2rem;
-  background: #e8e8e8;
+  background: #d9d9d9;
   text-align: center;
 }
 
 .partners-section .section-heading {
   margin-bottom: 3rem;
+  font-weight: 700;
+  color: #111e2d;
 }
 
 .partners-grid {
@@ -704,8 +777,8 @@ body {
 }
 
 .partner-logo {
-  aspect-ratio: 1 / 1;
-  background: #000;
+  aspect-ratio: 3 / 2;
+  background: #11b997;
   border-radius: 12px;
 }
 
@@ -725,7 +798,7 @@ body {
 /* Team section */
 .team-section {
   padding: 4rem 2rem;
-  background: #e8e8e8;
+  background: #fdf7f6;
 }
 
 .team-inner {
@@ -734,20 +807,31 @@ body {
   text-align: center;
 }
 
+.team-section .section-heading,
+.team-section .section-subtext {
+  color: #111e2d;
+}
+
+.team-section .section-heading {
+  font-weight: 700;
+}
+
 .team-group {
   margin-top: 2rem;
   padding: 2rem;
-  background: #faf6f2;
-  border: 1px solid #000;
+  background: #d9d9d9;
+  border: none;
   border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .team-group-label {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 0.85rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
+  color: #111e2d;
 }
 
 .team-grid {
@@ -765,9 +849,10 @@ body {
 .team-avatar {
   width: 90px;
   height: 90px;
-  background: #000;
+  background: #fdf7f6;
   border-radius: 50%;
   margin: 0 auto 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .team-name {
@@ -775,19 +860,20 @@ body {
   font-weight: 700;
   font-size: 0.85rem;
   margin-bottom: 0.25rem;
+  color: #111e2d;
 }
 
 .team-role {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.75rem;
-  color: #555;
+  color: #213645;
 }
 
 /* Contact section */
 .contact-section {
   padding: 4rem 2rem;
-  background: #000;
-  color: #fff;
+  background: #111e2d;
+  color: #fdf7f6;
 }
 
 .contact-inner {
@@ -804,6 +890,7 @@ body {
   font-weight: 400;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
+  color: #fdf7f6;
 }
 
 .contact-heading strong {
@@ -814,7 +901,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.85rem;
   line-height: 1.6;
-  color: #ccc;
+  color: #fdf7f6;
   margin-bottom: 1rem;
 }
 
@@ -828,14 +915,18 @@ body {
   padding: 0.75rem 1rem;
   border: none;
   border-radius: 8px;
-  background: #fff;
-  color: #000;
+  background: #fdf7f6;
+  color: #111e2d;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
 }
 
+.contact-input::placeholder {
+  color: #999;
+}
+
 .contact-input:focus {
-  outline: 2px solid #555;
+  outline: 2px solid #11b997;
 }
 
 .contact-textarea {
@@ -845,10 +936,10 @@ body {
 }
 
 .contact-submit {
-  align-self: flex-end;
+  align-self: flex-start;
   padding: 0.6rem 2rem;
-  background: #fff;
-  color: #000;
+  background: #11b997;
+  color: #fdf7f6;
   border: none;
   border-radius: 999px;
   font-family: 'Poppins', sans-serif;
